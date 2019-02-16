@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h2>Travel Gallery</h2>
+    </div>
+    <!-- grid -->
+    <div class="grid">
+        <!-- img1 -->
+        <div class="wrap">
+            <div class="img-overflow">
+                <div class="opacity">
+                    <i class="material-icons md">thumb_up</i>
+                    <img src="img/city.jpg">
+                </div>
+            </div>
+            <div class="container">
+                <h3>City</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, rerum? Aliquid, quidem.</p>
+            </div>
+        </div>
+        <!-- img2 -->
+        <div class="wrap">
+            <div class="img-overflow">
+                <div class="opacity">
+                    <img src="img/dockLandMelb.jpg">
+                </div>
+            </div>
+            <div class="container">
+                <h3>Docks</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, rerum? Aliquid, quidem.</p>
+            </div>
+        </div>
+        <!-- img3 -->
+        <div class="wrap">
+            <div class="img-overflow">
+                <div class="opacity">
+                    <img src="img/palms.jpg">
+                </div>
+            </div>
+            <div class="container">
+                <h3>Palm Trees</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, rerum? Aliquid, quidem.</p>
+            </div>
+        </div>
+        <!-- img4 -->
+        <div class="wrap">
+            <div class="img-overflow">
+                <div class="opacity">
+                    <img src="img/trees.jpg">
+                </div>
+            </div>
+            <div class="container">
+                <h3>Trees</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, rerum? Aliquid, quidem.</p>
+            </div>
+        </div>
+        <!-- img5 -->
+        <div class="wrap">
+            <div class="img-overflow">
+                <div class="opacity">
+                    <img src="img/building.jpg">
+                </div>
+            </div>
+            <div class="container">
+                <h3>Buildings</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, rerum? Aliquid, quidem.</p>
+            </div>
+        </div>
+        <!-- img6 -->
+        <div class="wrap">
+            <div class="img-overflow">
+                <div class="opacity">
+                    <img src="img/escalator.jpg">
+                </div>
+            </div>
+            <div class="container">
+                <h3>Escalator</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, rerum? Aliquid, quidem.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of grid -->
+
+    <!-- footer -->
+    <footer>
+        <a href="https://github.com/Golobro" target="_blank">
+            Golobro <i class="fab fa-github fa-1x"></i>        
+        </a>
+            &copy; 2019
+    </footer>
+
+    <script>
+        let opacityWrap = document.querySelectorAll('div.opacity');
+    
+        opacityWrap.forEach(idx => {
+            let createIconTag = document.createElement('i');
+            createIconTag.setAttribute('class', 'material-icons md');
+            createIconTag.innerHTML = 'thumb_up';
+            idx.appendChild(createIconTag);
+        });
+    </script>
+</body>
+
+</html>
